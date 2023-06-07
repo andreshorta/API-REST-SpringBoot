@@ -1,2 +1,1 @@
-# pruebaGit
-Prueba repositorio Java en GitHub
+#  API REST fullstack: javascript Frontend + Java (Spring) Backend
