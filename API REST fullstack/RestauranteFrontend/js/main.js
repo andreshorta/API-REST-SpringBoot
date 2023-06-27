@@ -25,7 +25,7 @@ function login() {
     contrasena: contrasena,
   };
 
-  //console.log("Usuario", usuario);
+  console.log("Usuario", usuario);
 
   fetch("http://localhost:8080/user/login", {
     method: "POST",
