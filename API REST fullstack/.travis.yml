@@ -1,0 +1,25 @@
+language: java
+jdk:
+  - openjdk8
+
+before_install:
+  # Instalar Node.js
+  - nvm install node
+
+install:
+  # Instalar dependencias JavaScript
+  - npm install
+
+script:
+  # Compilar y ejecutar pruebas Java
+  - ./gradlew build
+
+  # Ejecutar pruebas JavaScript
+  - npm install
+  - npm test
+
+  # Validar estilos CSS
+  - npm run validate-css
+
+  # Validar estructura y sintaxis HTML
+  - npm run validate-html
